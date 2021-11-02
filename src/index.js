@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const title = React.createElement('h1', null, 'Hello React!',<App/>)
-ReactDOM.render(title, document.getElementById('root'))
+const songs = [
+  {id: 1, name: 'Angular'},
+  {id: 2, name: 'React'},
+  {id: 3, name: 'Vue'},
+]
+
+const list = (
+  <ul>
+    {songs.map(item => <li key={item.id}>{item.name}</li>)}
+  </ul>
+)
+ReactDOM.render(list, document.getElementById('root'))
 // ReactDOM.render(
 //   <React.StrictMode>
 //     <App />
