@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const title = React.createElement('h1', null, 'Hello React!',<App/>)
+const name = 'Jack'
+const title = (
+  <h1 className="title">Hello,JSX! 姓名：{name}</h1>
+)
 ReactDOM.render(title, document.getElementById('root'))
 // ReactDOM.render(
 //   <React.StrictMode>
