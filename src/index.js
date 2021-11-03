@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const title = React.createElement('h1', null, 'Hello React!',<App/>)
-ReactDOM.render(title, document.getElementById('root'))
+/**
+ * 类组件
+ */
+class Hello extends React.Component {
+  render() {
+    return (
+      <em>我是一个类组件!</em>
+    )
+  }
+}
 
-reportWebVitals();
+ReactDOM.render(<Hello />, document.getElementById('root'))
+
