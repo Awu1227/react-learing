@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const title = React.createElement('h1', null, 'Hello React!',<App/>)
-ReactDOM.render(title, document.getElementById('root'))
+/**
+ * 函数组件
+ */
+// function Hello() {
+//   return (
+//     <h2>我是第一个函数组件！</h2>
+//   )
+// }
+const Hello = () => <h2>我是第一个函数组件！</h2>
+ReactDOM.render(<Hello />, document.getElementById('root'))
 
-reportWebVitals();
