@@ -1,10 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const title = React.createElement('h1', null, 'Hello React!',<App/>)
-ReactDOM.render(title, document.getElementById('root'))
+/**
+ * React事件处理
+ */
+// class Hello extends React.Component {
+//   handleClick() {
+//     console.log('你好，类组件！');
+//   }
+//   render() {
+//     return (
+//       <button onClick = {this.handleClick}>我是类组件！</button>
+//     )
+//   }
+// }
+function Hello() {
+  function handleClick() {
+    console.log('你好，函数组件！');
+  }
+  
+  return (<button onClick={handleClick}>我是函数组件！</button>)
+}
 
-reportWebVitals();
+ReactDOM.render(<Hello />, document.getElementById('root'))
+
