@@ -1,10 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const title = React.createElement('h1', null, 'Hello React!',<App/>)
-ReactDOM.render(title, document.getElementById('root'))
+class Hello extends React.Component {
+  // constructor() {
+  //   super()
+  //   // 初始化state
+  //   this.state = {
+  //     count: 10
+  //   }
+  // }
+  // 简洁语法初始化state
+  state = {
+    count: 10
+  }
+  render() {
+    return (
+      <div>
+        <h3>计数器：{this.state.count}</h3>
+        <button onClick={() => {
+          this.setState({
+            count: this.state.count + 1
+          })
+        }}>点我+1</button>
+      </div>
+    )
+  }
+}
 
-reportWebVitals();
+ReactDOM.render(<Hello />, document.getElementById('root'))
+
+
