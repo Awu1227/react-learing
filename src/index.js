@@ -1,10 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const title = React.createElement('h1', null, 'Hello React!',<App/>)
-ReactDOM.render(title, document.getElementById('root'))
+class Hello extends React.Component {
+  state = {
+    count: 10
+  }
+  onIncrement = () => {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+  render() {
+    return (
+      <div>
+        <h3>计数器：{this.state.count}</h3>
+        <button onClick={this.onIncrement}>点我+1</button>
+      </div>
+    )
+  }
+}
 
-reportWebVitals();
+ReactDOM.render(<Hello />, document.getElementById('root'))
+
+
