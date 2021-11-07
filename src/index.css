@@ -1,13 +1,82 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(35deg,#CCFFFF,#FFCCCC)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  outline: none;
+  background: transparent;
+  border: 1px solid #bbb;
+}
+textarea {
+  outline: none;
+  resize: none;
+  background: transparent;
+}
+.app{
+  width: 280px;
+  height: 100%;
+  margin: 50px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.user{
+  width: 260px;
+}
+.user-comment{
+  margin-top:10px;
+  width: 260px;
+  height: 200px;
+}
+button {
+  margin: 10px 0;
+}
+.btn-setting {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px  0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+}
+.btn-setting:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-setting:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul>li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+.deleteBtn{
+  border-radius: 50%;
+  border: none;
+  background: rgb(245, 108, 108);
+  width: 26px;
+  height: 26px;
+  background: url(./assets/delete.png) no-repeat;
+  background-size:20px 20px;
+  
 }
