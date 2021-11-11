@@ -13,4 +13,4 @@ git clone ...
 yarn
 yarn start
 ```
-
+And you can checkout branch for each chapter~
