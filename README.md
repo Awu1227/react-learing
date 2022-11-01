@@ -1,4 +1,4 @@
-# ✨What's is ?
+# ✨What's it ?
 
 This repository is the code of React-learing by [黑马程序员React从零基础入门到react](https://www.bilibili.com/video/BV14y4y1g7M4?p=73)
 
